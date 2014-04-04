@@ -121,14 +121,13 @@ static NSString *kDemoCellId = @"DefaultCellId";
 - (void)tapOnWebContent:(UIGestureRecognizer *)recognizer {
     BOOL wantsToReveal = NO;
     CGPoint relativePoint = [recognizer locationInView:recognizer.view];
-    //    CGRect relativeRect =
+
     CALayer *testLayer = [recognizer.view.layer hitTest:relativePoint];
 
     NSArray *tagsInfoCollection = _bookmarksDataSource.bookmarksInfoData;
 
     for (BEBookmarkHtmlTagInfo *info in tagsInfoCollection ) {
         if (info.tagLayer == testLayer) {
-            NSLog(@"YES.");
             wantsToReveal = YES;
             break;
         }
@@ -152,7 +151,6 @@ static NSString *kDemoCellId = @"DefaultCellId";
 
 - (CGFloat)beBookmarkLayoutContentHeight:(BEBookmarkLayout *)collectionViewLayout {
     CGSize contentSize = _bookmarkWebView.scrollView.contentSize;
-//    return [_bookmarkWebView webViewHtmlPageHeightWithJSMethod:NO];
     return contentSize.height;
 }
 
@@ -180,7 +178,7 @@ static NSString *kDemoCellId = @"DefaultCellId";
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
-    //todo: invisible html bookmarks holders
+    //todo: set invisible html bookmarks holders
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
@@ -189,6 +187,8 @@ static NSString *kDemoCellId = @"DefaultCellId";
     for (BEBookmarkHtmlTagInfo *info in _bookmarksDataSource.bookmarksInfoData) {
         info.tagLayer.frame = [_bookmarkWebView webViewRectForTagId:info.tagId];
     }
+
+    [_bookmarksCollectionController.collectionView.collectionViewLayout invalidateLayout];
 }
 
 #pragma mark - UIScrollView Delegate

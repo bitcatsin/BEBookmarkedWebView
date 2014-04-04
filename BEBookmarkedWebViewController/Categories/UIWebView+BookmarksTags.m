@@ -51,7 +51,7 @@
 - (CGRect)webViewRectForTagId:(NSString *)tagId {
 
     NSString *response = [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@%@%@",@"rectForTag(\"",tagId,@"\");"]];;
-    NSLog(@"edge insets: %@",response);
+//    NSLog(@"edge insets: %@",response);
 
     if ([response isEqualToString:@""]) {
         return CGRectZero;

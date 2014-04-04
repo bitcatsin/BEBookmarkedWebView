@@ -63,23 +63,6 @@ const CGFloat kBEBookmarkStandardHeight = 66.f;
         UICollectionViewLayoutAttributes *attributes = [self layoutAttributesForItemAtIndexPath:indexPath];
         [layoutAttributes addObject:attributes];
     }
-//
-//    // Supplementary views
-//    NSArray *dayHeaderViewIndexPaths = [self indexPathsOfDayHeaderViewsInRect:rect];
-//    for (NSIndexPath *indexPath in dayHeaderViewIndexPaths) {
-//        UICollectionViewLayoutAttributes *attributes =
-//        [self layoutAttributesForSupplementaryViewOfKind:@"DayHeaderView"
-//                                             atIndexPath:indexPath];
-//        [layoutAttributes addObject:attributes];
-//    }
-//    NSArray *hourHeaderViewIndexPaths =
-//    [self indexPathsOfHourHeaderViewsInRect:rect];
-//    for (NSIndexPath *indexPath in hourHeaderViewIndexPaths) {
-//        UICollectionViewLayoutAttributes *attributes =
-//        [self layoutAttributesForSupplementaryViewOfKind:@"HourHeaderView"
-//                                             atIndexPath:indexPath];
-//        [layoutAttributes addObject:attributes];
-//    }
 
     return layoutAttributes;
 }

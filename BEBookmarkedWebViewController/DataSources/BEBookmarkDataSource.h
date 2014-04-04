@@ -7,17 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "BEBookmarkCell.h"
+
 #import "BEBookmarkHtmlTagInfo.h"
 
 typedef void (^ConfigureBookmarkCellBlock)(UICollectionViewCell *cell, NSIndexPath *indexPath, BEBookmarkHtmlTagInfo *bookmarkData);
 
-//typedef UICollectionViewCell * (^CreateBookmarkCellBlock)(NSIndexPath *indexPath);
-
 @interface BEBookmarkDataSource : NSObject<UICollectionViewDataSource>
 
 @property (nonatomic, strong) ConfigureBookmarkCellBlock configureBookmarkCellBlock;
-//@property (nonatomic, strong) CreateBookmarkCellBlock createBookmarkCellBlock;
 
 @property (strong, nonatomic) NSArray *bookmarksInfoData;
 

@@ -20,6 +20,4 @@
 
 @property (nonatomic, strong) id<BEBookmarkLayoutDelegate>bookmarkRootDelegate;
 
-//@property (nonatomic, assign) CGFloat fooContentHeight;
-
 @end

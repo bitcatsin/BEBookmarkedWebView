@@ -8,7 +8,6 @@
 
 #import "BEBookmarksController.h"
 #import "BEBookmarkLayout.h"
-#import "BEBookmarkCell.h"
 #import "BEBookmarkDataSource.h"
 
 #import "UIScrollView+GruppenScrolling.h"
@@ -39,7 +38,6 @@ static NSString *kGSCollectionId = @"GSCollectionBookmarksId";
     self.collectionView.backgroundColor = [UIColor clearColor];
     
 	// register collectionViewCells via delegate
-//    BEBookmarkDataSource *dataSource = (BEBookmarkDataSource *)self.collectionView.dataSource;
 
     NSString *cellId = self.collectionClassId;
     Class cellClass= self.collectionClass;

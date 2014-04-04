@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B2243E918EE992B00F79199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2243E818EE992B00F79199 /* AppDelegate.m */; };
+		6BB8CF2B18EB2727002119A9 /* DemoBookmarkPostItCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB8CF2A18EB2727002119A9 /* DemoBookmarkPostItCell.m */; };
+		6BBE8C8418E8C14C00F3F554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBE8C8318E8C14C00F3F554 /* Foundation.framework */; };
+		6BBE8C8618E8C14C00F3F554 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBE8C8518E8C14C00F3F554 /* CoreGraphics.framework */; };
+		6BBE8C8818E8C14C00F3F554 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBE8C8718E8C14C00F3F554 /* UIKit.framework */; };
+		6BBE8C8E18E8C14C00F3F554 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE8C8C18E8C14C00F3F554 /* InfoPlist.strings */; };
+		6BBE8C9018E8C14C00F3F554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8C8F18E8C14C00F3F554 /* main.m */; };
+		6BBE8C9618E8C14C00F3F554 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE8C9518E8C14C00F3F554 /* Images.xcassets */; };
+		6BBE8C9D18E8C14C00F3F554 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBE8C9C18E8C14C00F3F554 /* XCTest.framework */; };
+		6BBE8C9E18E8C14C00F3F554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBE8C8318E8C14C00F3F554 /* Foundation.framework */; };
+		6BBE8C9F18E8C14C00F3F554 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBE8C8718E8C14C00F3F554 /* UIKit.framework */; };
+		6BBE8CA718E8C14C00F3F554 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE8CA518E8C14C00F3F554 /* InfoPlist.strings */; };
+		6BBE8CA918E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CA818E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests.m */; };
+		6BBE8CCE18E8C18E00F3F554 /* BEBookmarkedWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CB418E8C18E00F3F554 /* BEBookmarkedWebViewController.m */; };
+		6BBE8CCF18E8C18E00F3F554 /* BEBookmarksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CB618E8C18E00F3F554 /* BEBookmarksController.m */; };
+		6BBE8CD018E8C18E00F3F554 /* BEBookmarkedWebViewController+LayoutWebAndBookmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CB918E8C18E00F3F554 /* BEBookmarkedWebViewController+LayoutWebAndBookmarks.m */; };
+		6BBE8CD118E8C18E00F3F554 /* UIScrollView+GruppenScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CBB18E8C18E00F3F554 /* UIScrollView+GruppenScrolling.m */; };
+		6BBE8CD218E8C18E00F3F554 /* UIWebView+BookmarksTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CBD18E8C18E00F3F554 /* UIWebView+BookmarksTags.m */; };
+		6BBE8CD418E8C18E00F3F554 /* BEBookmarkDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CC318E8C18E00F3F554 /* BEBookmarkDataSource.m */; };
+		6BBE8CD518E8C18E00F3F554 /* BEBookmarkLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CC618E8C18E00F3F554 /* BEBookmarkLayout.m */; };
+		6BBE8CD618E8C18E00F3F554 /* BEBookmarkHtmlTagInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CCA18E8C18E00F3F554 /* BEBookmarkHtmlTagInfo.m */; };
+		6BBE8CD718E8C18E00F3F554 /* BEBookmarkWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE8CCD18E8C18E00F3F554 /* BEBookmarkWebView.m */; };
+		6BBE8CDA18E8C47600F3F554 /* sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE8CD918E8C47600F3F554 /* sample.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BBE8CA018E8C14C00F3F554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BBE8C7818E8C14C00F3F554 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BBE8C7F18E8C14C00F3F554;
+			remoteInfo = BEBookmarkedWebViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B2243E718EE992B00F79199 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B2243E818EE992B00F79199 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6BB8CF2918EB2727002119A9 /* DemoBookmarkPostItCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoBookmarkPostItCell.h; path = DemoClasses/DemoBookmarkPostItCell.h; sourceTree = "<group>"; };
+		6BB8CF2A18EB2727002119A9 /* DemoBookmarkPostItCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoBookmarkPostItCell.m; path = DemoClasses/DemoBookmarkPostItCell.m; sourceTree = "<group>"; };
+		6BBE8C8018E8C14C00F3F554 /* BEBookmarkedWebViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BEBookmarkedWebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBE8C8318E8C14C00F3F554 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6BBE8C8518E8C14C00F3F554 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6BBE8C8718E8C14C00F3F554 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6BBE8C8B18E8C14C00F3F554 /* BEBookmarkedWebViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BEBookmarkedWebViewDemo-Info.plist"; sourceTree = "<group>"; };
+		6BBE8C8D18E8C14C00F3F554 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6BBE8C8F18E8C14C00F3F554 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6BBE8C9118E8C14C00F3F554 /* BEBookmarkedWebViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BEBookmarkedWebViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		6BBE8C9518E8C14C00F3F554 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images.xcassets; sourceTree = "<group>"; };
+		6BBE8C9B18E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BEBookmarkedWebViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBE8C9C18E8C14C00F3F554 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6BBE8CA418E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BEBookmarkedWebViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		6BBE8CA618E8C14C00F3F554 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6BBE8CA818E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BEBookmarkedWebViewDemoTests.m; sourceTree = "<group>"; };
+		6BBE8CB318E8C18E00F3F554 /* BEBookmarkedWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBookmarkedWebViewController.h; sourceTree = "<group>"; };
+		6BBE8CB418E8C18E00F3F554 /* BEBookmarkedWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBookmarkedWebViewController.m; sourceTree = "<group>"; };
+		6BBE8CB518E8C18E00F3F554 /* BEBookmarksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBookmarksController.h; sourceTree = "<group>"; };
+		6BBE8CB618E8C18E00F3F554 /* BEBookmarksController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBookmarksController.m; sourceTree = "<group>"; };
+		6BBE8CB818E8C18E00F3F554 /* BEBookmarkedWebViewController+LayoutWebAndBookmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BEBookmarkedWebViewController+LayoutWebAndBookmarks.h"; sourceTree = "<group>"; };
+		6BBE8CB918E8C18E00F3F554 /* BEBookmarkedWebViewController+LayoutWebAndBookmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BEBookmarkedWebViewController+LayoutWebAndBookmarks.m"; sourceTree = "<group>"; };
+		6BBE8CBA18E8C18E00F3F554 /* UIScrollView+GruppenScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+GruppenScrolling.h"; sourceTree = "<group>"; };
+		6BBE8CBB18E8C18E00F3F554 /* UIScrollView+GruppenScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+GruppenScrolling.m"; sourceTree = "<group>"; };
+		6BBE8CBC18E8C18E00F3F554 /* UIWebView+BookmarksTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+BookmarksTags.h"; sourceTree = "<group>"; };
+		6BBE8CBD18E8C18E00F3F554 /* UIWebView+BookmarksTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+BookmarksTags.m"; sourceTree = "<group>"; };
+		6BBE8CC218E8C18E00F3F554 /* BEBookmarkDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBookmarkDataSource.h; sourceTree = "<group>"; };
+		6BBE8CC318E8C18E00F3F554 /* BEBookmarkDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBookmarkDataSource.m; sourceTree = "<group>"; };
+		6BBE8CC518E8C18E00F3F554 /* BEBookmarkLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBookmarkLayout.h; sourceTree = "<group>"; };
+		6BBE8CC618E8C18E00F3F554 /* BEBookmarkLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBookmarkLayout.m; sourceTree = "<group>"; };
+		6BBE8CC818E8C18E00F3F554 /* BEBookmarkHtmlTagData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBookmarkHtmlTagData.h; sourceTree = "<group>"; };
+		6BBE8CC918E8C18E00F3F554 /* BEBookmarkHtmlTagInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBookmarkHtmlTagInfo.h; sourceTree = "<group>"; };
+		6BBE8CCA18E8C18E00F3F554 /* BEBookmarkHtmlTagInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBookmarkHtmlTagInfo.m; sourceTree = "<group>"; };
+		6BBE8CCC18E8C18E00F3F554 /* BEBookmarkWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBookmarkWebView.h; sourceTree = "<group>"; };
+		6BBE8CCD18E8C18E00F3F554 /* BEBookmarkWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBookmarkWebView.m; sourceTree = "<group>"; };
+		6BBE8CD918E8C47600F3F554 /* sample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = sample.html; path = Resources/sample.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BBE8C7D18E8C14C00F3F554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBE8C8618E8C14C00F3F554 /* CoreGraphics.framework in Frameworks */,
+				6BBE8C8818E8C14C00F3F554 /* UIKit.framework in Frameworks */,
+				6BBE8C8418E8C14C00F3F554 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BBE8C9818E8C14C00F3F554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBE8C9D18E8C14C00F3F554 /* XCTest.framework in Frameworks */,
+				6BBE8C9F18E8C14C00F3F554 /* UIKit.framework in Frameworks */,
+				6BBE8C9E18E8C14C00F3F554 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BB8CF2818EB26C5002119A9 /* DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				6BB8CF2918EB2727002119A9 /* DemoBookmarkPostItCell.h */,
+				6BB8CF2A18EB2727002119A9 /* DemoBookmarkPostItCell.m */,
+			);
+			name = DemoApp;
+			sourceTree = "<group>";
+		};
+		6BBE8C7718E8C14C00F3F554 = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CB218E8C18E00F3F554 /* BEBookmarkedWebViewController */,
+				6BBE8C8918E8C14C00F3F554 /* BEBookmarkedWebViewDemo */,
+				6BBE8CA218E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests */,
+				6BBE8C8218E8C14C00F3F554 /* Frameworks */,
+				6BBE8C8118E8C14C00F3F554 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BBE8C8118E8C14C00F3F554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8C8018E8C14C00F3F554 /* BEBookmarkedWebViewDemo.app */,
+				6BBE8C9B18E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BBE8C8218E8C14C00F3F554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8C8318E8C14C00F3F554 /* Foundation.framework */,
+				6BBE8C8518E8C14C00F3F554 /* CoreGraphics.framework */,
+				6BBE8C8718E8C14C00F3F554 /* UIKit.framework */,
+				6BBE8C9C18E8C14C00F3F554 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BBE8C8918E8C14C00F3F554 /* BEBookmarkedWebViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6B2243E718EE992B00F79199 /* AppDelegate.h */,
+				6B2243E818EE992B00F79199 /* AppDelegate.m */,
+				6BB8CF2818EB26C5002119A9 /* DemoApp */,
+				6BBE8C9518E8C14C00F3F554 /* Images.xcassets */,
+				6BBE8CD818E8C37800F3F554 /* Resources */,
+				6BBE8C8A18E8C14C00F3F554 /* Supporting Files */,
+			);
+			path = BEBookmarkedWebViewDemo;
+			sourceTree = "<group>";
+		};
+		6BBE8C8A18E8C14C00F3F554 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8C8B18E8C14C00F3F554 /* BEBookmarkedWebViewDemo-Info.plist */,
+				6BBE8C8C18E8C14C00F3F554 /* InfoPlist.strings */,
+				6BBE8C8F18E8C14C00F3F554 /* main.m */,
+				6BBE8C9118E8C14C00F3F554 /* BEBookmarkedWebViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BBE8CA218E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CA818E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests.m */,
+				6BBE8CA318E8C14C00F3F554 /* Supporting Files */,
+			);
+			path = BEBookmarkedWebViewDemoTests;
+			sourceTree = "<group>";
+		};
+		6BBE8CA318E8C14C00F3F554 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CA418E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests-Info.plist */,
+				6BBE8CA518E8C14C00F3F554 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BBE8CB218E8C18E00F3F554 /* BEBookmarkedWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CB318E8C18E00F3F554 /* BEBookmarkedWebViewController.h */,
+				6BBE8CB418E8C18E00F3F554 /* BEBookmarkedWebViewController.m */,
+				6BBE8CB518E8C18E00F3F554 /* BEBookmarksController.h */,
+				6BBE8CB618E8C18E00F3F554 /* BEBookmarksController.m */,
+				6BBE8CB718E8C18E00F3F554 /* Categories */,
+				6BBE8CC118E8C18E00F3F554 /* DataSources */,
+				6BBE8CC418E8C18E00F3F554 /* Layout */,
+				6BBE8CC718E8C18E00F3F554 /* Model */,
+				6BBE8CCB18E8C18E00F3F554 /* Views */,
+			);
+			name = BEBookmarkedWebViewController;
+			path = ../BEBookmarkedWebViewController;
+			sourceTree = "<group>";
+		};
+		6BBE8CB718E8C18E00F3F554 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CB818E8C18E00F3F554 /* BEBookmarkedWebViewController+LayoutWebAndBookmarks.h */,
+				6BBE8CB918E8C18E00F3F554 /* BEBookmarkedWebViewController+LayoutWebAndBookmarks.m */,
+				6BBE8CBA18E8C18E00F3F554 /* UIScrollView+GruppenScrolling.h */,
+				6BBE8CBB18E8C18E00F3F554 /* UIScrollView+GruppenScrolling.m */,
+				6BBE8CBC18E8C18E00F3F554 /* UIWebView+BookmarksTags.h */,
+				6BBE8CBD18E8C18E00F3F554 /* UIWebView+BookmarksTags.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		6BBE8CC118E8C18E00F3F554 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CC218E8C18E00F3F554 /* BEBookmarkDataSource.h */,
+				6BBE8CC318E8C18E00F3F554 /* BEBookmarkDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		6BBE8CC418E8C18E00F3F554 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CC518E8C18E00F3F554 /* BEBookmarkLayout.h */,
+				6BBE8CC618E8C18E00F3F554 /* BEBookmarkLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		6BBE8CC718E8C18E00F3F554 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CC818E8C18E00F3F554 /* BEBookmarkHtmlTagData.h */,
+				6BBE8CC918E8C18E00F3F554 /* BEBookmarkHtmlTagInfo.h */,
+				6BBE8CCA18E8C18E00F3F554 /* BEBookmarkHtmlTagInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BBE8CCB18E8C18E00F3F554 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CCC18E8C18E00F3F554 /* BEBookmarkWebView.h */,
+				6BBE8CCD18E8C18E00F3F554 /* BEBookmarkWebView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BBE8CD818E8C37800F3F554 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE8CD918E8C47600F3F554 /* sample.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BBE8C7F18E8C14C00F3F554 /* BEBookmarkedWebViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BBE8CAC18E8C14C00F3F554 /* Build configuration list for PBXNativeTarget "BEBookmarkedWebViewDemo" */;
+			buildPhases = (
+				6BBE8C7C18E8C14C00F3F554 /* Sources */,
+				6BBE8C7D18E8C14C00F3F554 /* Frameworks */,
+				6BBE8C7E18E8C14C00F3F554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BEBookmarkedWebViewDemo;
+			productName = BEBookmarkedWebViewDemo;
+			productReference = 6BBE8C8018E8C14C00F3F554 /* BEBookmarkedWebViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BBE8C9A18E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BBE8CAF18E8C14C00F3F554 /* Build configuration list for PBXNativeTarget "BEBookmarkedWebViewDemoTests" */;
+			buildPhases = (
+				6BBE8C9718E8C14C00F3F554 /* Sources */,
+				6BBE8C9818E8C14C00F3F554 /* Frameworks */,
+				6BBE8C9918E8C14C00F3F554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BBE8CA118E8C14C00F3F554 /* PBXTargetDependency */,
+			);
+			name = BEBookmarkedWebViewDemoTests;
+			productName = BEBookmarkedWebViewDemoTests;
+			productReference = 6BBE8C9B18E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BBE8C7818E8C14C00F3F554 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bit Cats";
+				TargetAttributes = {
+					6BBE8C9A18E8C14C00F3F554 = {
+						TestTargetID = 6BBE8C7F18E8C14C00F3F554;
+					};
+				};
+			};
+			buildConfigurationList = 6BBE8C7B18E8C14C00F3F554 /* Build configuration list for PBXProject "BEBookmarkedWebViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6BBE8C7718E8C14C00F3F554;
+			productRefGroup = 6BBE8C8118E8C14C00F3F554 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BBE8C7F18E8C14C00F3F554 /* BEBookmarkedWebViewDemo */,
+				6BBE8C9A18E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BBE8C7E18E8C14C00F3F554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBE8C8E18E8C14C00F3F554 /* InfoPlist.strings in Resources */,
+				6BBE8C9618E8C14C00F3F554 /* Images.xcassets in Resources */,
+				6BBE8CDA18E8C47600F3F554 /* sample.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BBE8C9918E8C14C00F3F554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBE8CA718E8C14C00F3F554 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BBE8C7C18E8C14C00F3F554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBE8CD018E8C18E00F3F554 /* BEBookmarkedWebViewController+LayoutWebAndBookmarks.m in Sources */,
+				6BBE8CD518E8C18E00F3F554 /* BEBookmarkLayout.m in Sources */,
+				6BBE8CD618E8C18E00F3F554 /* BEBookmarkHtmlTagInfo.m in Sources */,
+				6BBE8CD718E8C18E00F3F554 /* BEBookmarkWebView.m in Sources */,
+				6BB8CF2B18EB2727002119A9 /* DemoBookmarkPostItCell.m in Sources */,
+				6BBE8C9018E8C14C00F3F554 /* main.m in Sources */,
+				6B2243E918EE992B00F79199 /* AppDelegate.m in Sources */,
+				6BBE8CD418E8C18E00F3F554 /* BEBookmarkDataSource.m in Sources */,
+				6BBE8CCE18E8C18E00F3F554 /* BEBookmarkedWebViewController.m in Sources */,
+				6BBE8CCF18E8C18E00F3F554 /* BEBookmarksController.m in Sources */,
+				6BBE8CD218E8C18E00F3F554 /* UIWebView+BookmarksTags.m in Sources */,
+				6BBE8CD118E8C18E00F3F554 /* UIScrollView+GruppenScrolling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BBE8C9718E8C14C00F3F554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBE8CA918E8C14C00F3F554 /* BEBookmarkedWebViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BBE8CA118E8C14C00F3F554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BBE8C7F18E8C14C00F3F554 /* BEBookmarkedWebViewDemo */;
+			targetProxy = 6BBE8CA018E8C14C00F3F554 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BBE8C8C18E8C14C00F3F554 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BBE8C8D18E8C14C00F3F554 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6BBE8CA518E8C14C00F3F554 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BBE8CA618E8C14C00F3F554 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BBE8CAA18E8C14C00F3F554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BBE8CAB18E8C14C00F3F554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BBE8CAD18E8C14C00F3F554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BEBookmarkedWebViewDemo/BEBookmarkedWebViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "BEBookmarkedWebViewDemo/BEBookmarkedWebViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6BBE8CAE18E8C14C00F3F554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BEBookmarkedWebViewDemo/BEBookmarkedWebViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "BEBookmarkedWebViewDemo/BEBookmarkedWebViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6BBE8CB018E8C14C00F3F554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BEBookmarkedWebViewDemo.app/BEBookmarkedWebViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BEBookmarkedWebViewDemo/BEBookmarkedWebViewDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BEBookmarkedWebViewDemoTests/BEBookmarkedWebViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6BBE8CB118E8C14C00F3F554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BEBookmarkedWebViewDemo.app/BEBookmarkedWebViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BEBookmarkedWebViewDemo/BEBookmarkedWebViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "BEBookmarkedWebViewDemoTests/BEBookmarkedWebViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BBE8C7B18E8C14C00F3F554 /* Build configuration list for PBXProject "BEBookmarkedWebViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBE8CAA18E8C14C00F3F554 /* Debug */,
+				6BBE8CAB18E8C14C00F3F554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BBE8CAC18E8C14C00F3F554 /* Build configuration list for PBXNativeTarget "BEBookmarkedWebViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBE8CAD18E8C14C00F3F554 /* Debug */,
+				6BBE8CAE18E8C14C00F3F554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BBE8CAF18E8C14C00F3F554 /* Build configuration list for PBXNativeTarget "BEBookmarkedWebViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBE8CB018E8C14C00F3F554 /* Debug */,
+				6BBE8CB118E8C14C00F3F554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BBE8C7818E8C14C00F3F554 /* Project object */;
+}
